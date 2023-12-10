@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimeTrove Co.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="container">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" class="logo-img">
+                </a>              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#zapatos">Zapatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bolsos">Bolsos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#relojes">Relojes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#subscribete">Subscribete</a>
+                        </li>
+                    </ul>
+
+                    <div class="cart-icon">
+                        <a href="carrito.html" class="text-dark">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="logout-icon">
+                        <a href="index.html" class="text-dark">
+                            <i class="fas fa-sign-out-alt fa-2x" style="color: #FF3886;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="mt-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active border rounded info p-5">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h1>Bolso Totto Cool 2 Go</h1>
+                                    <h5>El Bolso Cool 2 Go tiene todo lo que necesitas! es práctico, amplio y liviano.
+                                        Está elaborado en poliéster, es resistente al rasgado y de fácil limpieza.</h5>
+                                    <h1>$ 139.800</h1>
+                                    <div class="btn btn-comprar" data-id="8" data-nombre="Bolso Totto Cool 2 Go"
+                                        data-precio="139800" data-info="El Bolso Cool 2 Go tiene todo lo que necesitas! es práctico, amplio y liviano. 
+                                        Está elaborado en poliéster, es resistente al rasgado y de fácil limpieza."
+                                        data-categoria="Bolsos" data-imagen="images/Banner/totto.png">Comprar Ahora
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/Banner/totto.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active border rounded info p-5">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h1>Adidas Originals Forum Low CL</h1>
+                                    <h5>Eleva tu estilo con estos tenis adidas Forum Bold. Su diseño actualiza los
+                                        adidas Forum originales de 1984 con una mediasuela de plataforma que te permite
+                                        expresarte a tu manera. Un Trifolio extragrande se destaca en el costado y evoca
+                                        las raíces deportivas del look.</h5>
+                                    <h3> <strike>$ 549.900</strike> </h3>
+                                    <h1>$ 469.900 -15%</h1>
+                                    <div class="btn btn-comprar" data-id="7" data-nombre="Adidas Originals Forum Low CL"
+                                        data-precio="469900" data-info="Eleva tu estilo con estos tenis adidas Forum Bold. Su diseño actualiza los
+                                        adidas Forum originales de 1984 con una mediasuela de plataforma que te permite
+                                        expresarte a tu manera. Un Trifolio extragrande se destaca en el costado y evoca
+                                        las raíces deportivas del look." data-categoria="Zapatos"
+                                        data-imagen="images/Banner/adidas.png">Comprar Ahora
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/Banner/adidas.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active border rounded info p-5">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h1>Reloj Casio Core Mens</h1>
+                                    <h5>Los relojes Casio se caracterizan por tener Colecciones retro, clásicas,
+                                        deportivas, formales y juveniles, diseños y formas para todos los estilos y
+                                        gustos.</h5>
+                                    <h3> <strike> $ 220.000</strike> </h3>
+                                    <h1>$ 156.800 -30%</h1>
+                                    <div class="btn btn-comprar" data-id="10" data-nombre="Reloj Casio Core Mens"
+                                        data-precio="156800" data-info="Los relojes Casio se caracterizan por tener Colecciones retro, clásicas,
+                                        deportivas, formales y juveniles, diseños y formas para todos los estilos y
+                                        gustos." data-categoria="Relojes" data-imagen="images/Banner/casio.png">Comprar
+                                        Ahora
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/Banner/casio.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">siguiente</span>
+                </button>
+            </div>
+        </section>
+
+    </header>
+    <main>
+
+        <section>
+            <div class="container text-center my-5">
+                <div class="row g-4 categories">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border bg-primary rounded-3 d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Zapatos</h1>
+                            <img src="images/Categorias/shoes.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border bg-success rounded-3 d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Bolsos</h1>
+                            <img src="images/Categorias/bag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border bg-warning rounded-3 d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Reloj</h1>
+                            <img src="images/Categorias/watch.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5" id="zapatos">
+            <h2>Zapatos</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Zapatos/adidas.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Adidas Breaknet Court</h5>
+                            <h4> <strike> $ 309.900</strike> </h4>
+                            <h2>$ 216.901 -30%</h2>
+                            <p class="card-text">Incluso si desconoces el origen icónico de estos tenis adidas para
+                                jugar tenis, podrás apreciar su gran estilo vintage. El exterior de cuero sintético es
+                                resistente y ofrece un ajuste y sensación de primera.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="1" data-nombre="Adidas Breaknet Court"
+                                data-precio="216901" data-info="Incluso si desconoces el origen icónico de estos tenis adidas para
+                                jugar tenis, podrás apreciar su gran estilo vintage. El exterior de cuero sintético es
+                                resistente y ofrece un ajuste y sensación de primera" data-categoria="Zapatos"
+                                data-imagen="images/Zapatos/adidas.png">Comprar Ahora
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Zapatos/puma.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Puma Caven 2.0 Vt</h5>
+                            <h4> <strike>$ 424.900</strike> </h4>
+                            <h2>$ 374.900 -12%</h2>
+                            <p class="card-text">Llevando los Caven 2.0 Vt de PUMA podrás disfrutar plenamente de tu
+                                actividad física favorita o de tu tiempo de ocio.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="2" data-nombre="Puma Caven 2.0 Vt"
+                                data-precio="374900" data-info="Llevando los Caven 2.0 Vt de PUMA podrás disfrutar plenamente de tu
+                                        actividad física favorita o de tu tiempo de ocio." data-categoria="Zapatos"
+                                data-imagen="images/Zapatos/puma.png">Comprar Ahora
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Zapatos/nike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Run Swift 3</h5>
+                            <h4> <strike> $ 479.950</strike> </h4>
+                            <h2>$ 424.900 -11%</h2>
+                            <p class="card-text">Sea cual sea la carrera, el Swift 3 estará ahí con una devoción y un
+                                soporte imperecederos. Con un diseño modificado que ofrece soporte, durabilidad y
+                                comodidad por todas partes.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="3" data-nombre="Nike Run Swift 3" data-precio="424900"
+                                data-info="Sea cual sea la carrera, el Swift 3 estará ahí con una devoción y un
+                                        soporte imperecederos. Con un diseño modificado que ofrece soporte, durabilidad y
+                                        comodidad por todas partes." data-categoria="Zapatos"
+                                data-imagen="images/Zapatos/nike.png">Comprar Ahora
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2></h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Zapatos/rebook2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rebook Nanoflex V2</h5>
+                            <h4> <strike>$ 424.900</strike> </h4>
+                            <h2>$ 374.900 -12%</h2>
+                            <p class="card-text">Desde ejercicios pliométricos hasta levantamiento de pesas, estos tenis
+                                de entrenamiento te dan la confianza que necesitas. Su exterior de malla es ligera y
+                                transpirable, y cuenta con revestimientos que te brindan soporte.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="4" data-nombre="Rebook Nanoflex V2"
+                                data-precio="374900" data-info="Desde ejercicios pliométricos hasta levantamiento de pesas, estos tenis
+                                        de entrenamiento te dan la confianza que necesitas. Su exterior de malla es ligera y
+                                        transpirable, y cuenta con revestimientos que te brindan soporte."
+                                data-categoria="Zapatos" data-imagen="images/Zapatos/rebook2.png">Comprar Ahora
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Zapatos/reebok.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Reebok Classics Advance</h5>
+                            <h4> <strike>$ 289.900</strike> </h4>
+                            <h2>$ 242.900 -16%</h2>
+                            <p class="card-text">Todo el estilo de cancha de Reebok que amas. Estos tenis veganos para
+                                mujer combinan los íconos Club C 85 y Club C Revenge para hacer el nuevo Court Advance.
+                            </p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="5" data-nombre="Reebok Classics Advance"
+                                data-precio="242900"
+                                data-info="Todo el estilo de cancha de Reebok que amas. Estos tenis veganos para
+                                                        mujer combinan los íconos Club C 85 y Club C Revenge para hacer el nuevo Court Advance.."
+                                data-categoria="Zapatos" data-imagen="images/Zapatos/reebok.png">Comprar Ahora
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Zapatos/skechers.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Skechers D'lites</h5>
+                            <h2>$ 259.900</h2>
+                            <p class="card-text">La tracción duradera y el estilo atlético se combinan en Skechers
+                                D'Lites 4.0 - Wintuff. Con cordones presenta una parte superior de cuero, malla y
+                                material sintético con una plantilla de espuma viscoelástica refrigerada por aire y una
+                                suela Goodyear Performance.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="6" data-nombre="Skechers D'lites" data-precio="259900"
+                                data-info="La tracción duradera y el estilo atlético se combinan en Skechers
+                            D'Lites 4.0 - Wintuff. Con cordones presenta una parte superior de cuero, malla y
+                            material sintético con una plantilla de espuma viscoelástica refrigerada por aire y una
+                            suela Goodyear Performance." data-categoria="Zapatos"
+                                data-imagen="images/Zapatos/skechers.png">Comprar Ahora</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="container my-5" id="bolsos">
+            <h2>Bolsos</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Bolsos/totto.png" class=card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolso Totto Cool 2 Go</h5>
+                            <h2>$ 139.800</h2>
+                            <p class="card-text">El Bolso Cool 2 Go tiene todo lo que necesitas! es práctico, amplio y
+                                liviano. Está elaborado en poliéster, es resistente al rasgado y de fácil limpieza. Con
+                                recubrimiento interno para mantener frescos alimentos y bebidas con marquilla micro
+                                inyectada. Es perfecto para llevar lo que necesitas a tus viajes, la oficina o la
+                                universidad</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="8" data-nombre="Bolso Totto Cool 2 Go"
+                                data-precio="139800" data-info="El Bolso Cool 2 Go tiene todo lo que necesitas! es práctico, amplio y
+                                liviano. Está elaborado en poliéster, es resistente al rasgado y de fácil limpieza. Con
+                                recubrimiento interno para mantener frescos alimentos y bebidas con marquilla micro
+                                inyectada. Es perfecto para llevar lo que necesitas a tus viajes, la oficina o la
+                                universidad." data-categoria="Bolsos" data-imagen="images/Bolsos/totto.png">Comprar
+                                Ahora</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Bolsos/velez.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolso Vélez</h5>
+                            <h4> <strike> $ 389.900</strike> </h4>
+                            <h2>$ 311.920 -20%</h2>
+                            <p class="card-text">Bolso tipo shopping de cuero grabado con placa palmeras que le imprime
+                                un aire moderno a esta pieza. Este bolso para mujer tiene dos bolsillos internos, uno
+                                para el celular y otro con cremallera; además, cuenta con un tarjetero extraíble que
+                                podrás llevar a todas partes.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="8" data-nombre="Bolso Vélez" data-precio="311920"
+                                data-info="Bolso tipo shopping de cuero grabado con placa palmeras que le imprime
+                            un aire moderno a esta pieza. Este bolso para mujer tiene dos bolsillos internos, uno
+                            para el celular y otro con cremallera; además, cuenta con un tarjetero extraíble que
+                            podrás llevar a todas partes." data-categoria="Bolsos"
+                                data-imagen="images/Bolsos/velez.png">Comprar Ahora</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Bolsos/Nike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Morral Aguamarina-Beige Nike</h5>
+                            <h4> <strike> $ 209.950</strike> </h4>
+                            <h2>$ 190.900 -9%</h2>
+                            <p class="card-text">Es ideal tanto para los entrenamientos como para ir al trabajo. Un gran
+                                compartimiento con cierre ofrece espacio para el calzado o para un conjunto adicional de
+                                ropa para el gimnasio, así como para tus libros y tu laptop de la universidad.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="9" data-nombre="Morral Aguamarina-Beige Nike"
+                                data-precio="190900" data-info="Es ideal tanto para los entrenamientos como para ir al trabajo. Un gran
+                            compartimiento con cierre ofrece espacio para el calzado o para un conjunto adicional de
+                            ropa para el gimnasio, así como para tus libros y tu laptop de la universidad."
+                                data-categoria="Bolsos" data-imagen="images/Bolsos/Nike.png">Comprar Ahora</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5" id="relojes">
+            <h2>Relojes</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card border border-0 shadow-lg h-100">
+                        <img src="images/Banner/casio.png" class=card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Reloj Casio Core Mens</h5>
+                            <h4> <strike> $ 220.000</strike> </h4>
+                            <h2>$ 156.800 -30%</h2>
+                            <p class="card-text">Los relojes Casio se caracterizan por tener Colecciones retro,
+                                clásicas,
+                                deportivas, formales y juveniles, diseños y formas para todos los estilos y
+                                gustos.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-comprar" data-id="10" data-nombre="Reloj Casio Core Mens"
+                                data-precio="156800" data-info="Los relojes Casio se caracterizan por tener Colecciones retro, clásicas,
+                            deportivas, formales y juveniles, diseños y formas para todos los estilos y
+                            gustos." data-categoria="Relojes" data-imagen="images/Banner/casio.png">Comprar Ahora</div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+            class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
+        <section style="height: 400px;"
+            class="container rounded-3 d-flex justify-content-center align-items-center info" id="subscribete">
+            <div>
+                <h2>SIGAMOS EN CONTACTO</h2>
+                <p>Reciba información actualizada sobre ventas, ofertas especiales y mucho más</p>
+                <form>
+                    <div class="mb-1">
+                        <h5>Nombre</h5>
+                        <input type="text" name="name" id="txt-nameC" class="form-control">
+                        <h5>Email</h5>
+                        <input type="email" name="email" id="txt-emailC" class="form-control">
+                        <h5>Comentario</h5>
+                        <input type="comments" name="subject" id="txt-mensajeC" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="mt-5 text-center">
+        <p><small>©2023. All rights reserved.</small></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('.btn-comprar').forEach(button => {
+            5
+            button.addEventListener('click', function () {
+                let idProducto = this.getAttribute('data-id');
+                let nombreProducto = this.getAttribute('data-nombre');
+                let precioProducto = parseFloat(this.getAttribute('data-precio'));
+                let infoProducto = this.getAttribute('data-info');
+                let categoriaProducto = this.getAttribute('data-categoria');
+                let imagenProducto = this.getAttribute('data-imagen');
+
+                agregarAlCarrito(idProducto, nombreProducto, precioProducto, infoProducto, categoriaProducto, imagenProducto);
+            });
+        });
+
+        function agregarAlCarrito(idProducto, nombreProducto, precioProducto, infoProducto, categoriaProducto, imagenProducto) {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+            if (carrito[idProducto]) {
+                carrito[idProducto].cantidad++;
+            } else {
+                carrito[idProducto] = { nombre: nombreProducto, precio: precioProducto, info: infoProducto, categoria: categoriaProducto, cantidad: 1, imagen: imagenProducto };
+            }
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert('Producto agregado al carrito!');
+        }
+    </script>
+
+</body>
+
+</html>

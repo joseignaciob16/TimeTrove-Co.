@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TimeTrove Co.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <link href="css/carrito.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <h2>Mi carrito</h2>
+
+            <script>
+                window.onload = function () {
+                    let carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+                    let htmlCarrito = '';
+                    let totalCompra = 0;
+                    for (let id in carrito) {
+                        let producto = carrito[id];
+                        let subtotalProducto = producto.precio * producto.cantidad;
+                        totalCompra += subtotalProducto;
+
+                        htmlCarrito += `
+                   <div class="producto-carrito">
+                       <img src="${producto.imagen}" alt="${producto.nombre}" class="imagen-producto">
+                       <div class="info-producto">
+                           <h3>${producto.nombre}</h3>
+                           <h5>Precio: $${producto.precio}</h5>
+                           <p>Descripción: ${producto.info}</p>
+                           <p>Categoria: ${producto.categoria}</p>
+                           <h6>Cantidad: ${producto.cantidad}</h6>
+                           <h6>Subtotal: $${subtotalProducto.toFixed(2)}</h6>
+                       </div>
+                       <button class="btn-eliminar" onclick="eliminarDelCarrito('${id}')">Eliminar</button>
+                   </div>`;
+                    }
+                    document.getElementById('contenedor-carrito').innerHTML = htmlCarrito;
+                    document.getElementById('total-compra').innerText = `Total: $${totalCompra.toFixed(2)}`;
+                }; 
+            </script>
+
+            <div id="contenedor-carrito"></div>
+
+            <script>
+                function eliminarDelCarrito(idProducto) {
+                    let carrito = JSON.parse(localStorage.getItem('carrito'));
+                    if (carrito && carrito[idProducto]) {
+                        delete carrito[idProducto];
+                        localStorage.setItem('carrito', JSON.stringify(carrito));
+                        location.reload();
+                    } else {
+                        alert('Hubo un error al intentar eliminar el producto');
+                    }
+                }
+            </script>
+
+            <div id="total-compra">
+                <h2>Total: $0.00</h2>
+            </div>
+
+            <div class="col-md-12 pt-4 pb-4 mb-3">
+                <button type="button" class="btn btn-success check-out" onclick="realizarCompra()">Comprar</button>
+            </div>
+
+            <div class="col-md-12 pt-4 pb-4 mb-3">
+                <a href="tienda.html" class="btn btn-danger back">Volver al Comercio</a>
+            </div>
+
+</body>
+
+</html>

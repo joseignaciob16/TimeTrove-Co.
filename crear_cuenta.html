@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeTrove Co.</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-..." ; </head>
+
+<body>
+    <a href="index.html">
+        <i class="fas fa-arrow-left"></i> Volver a Login
+    </a>
+    <div class="login-box">
+        <div class="left-box">
+            <h1>Crear cuenta</h1>
+
+            <form action="index.html" method="GET" id="box-form" onsubmit="return validarRegistro()">
+                <input type="text" name="nombre" id="txt-nombre" class="input-box" placeholder="Nombre">
+                <input type="text" name="email" id="txt-email" class="input-box" placeholder="Correo electrónico">
+                <input type="password" name="password" id="txt-password" class="input-box" placeholder="Contraseña">
+                <input type="submit" name="registrar" value="Registrar">
+            </form>
+            <div id="mensaje-exito" style="display: none; color: green;">
+                ¡Cuenta creada exitosamente!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
